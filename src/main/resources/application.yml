@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      host: mongo
+      port: 27017
+      database: docker-demo
+server:
+    port: 8082
