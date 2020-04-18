@@ -17,10 +17,12 @@ public class Controller {
 
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private HelloService helloService;
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello";
+        return helloService.sayHello();
     }
 
     @GetMapping("/create/{name}")
