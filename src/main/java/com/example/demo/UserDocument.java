@@ -13,7 +13,7 @@ class UserDocument implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public UserDocument(String name) {
+    UserDocument(String name) {
         this.name = name;
     }
 

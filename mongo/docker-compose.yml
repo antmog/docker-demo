@@ -1,11 +1,10 @@
 version: '2'
 services:
-  application:
-    image: antmog/docker-demo:9
-    container_name: app
-    hostname: app
+  mongodb:
+    image: mongo:latest
+    container_name: mongo-demo
     ports:
-      - 8087:8082
+      - 32768:27017
     networks:
       - appandmongo
 

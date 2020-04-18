@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 @Service
 public class CoolService {
 
-    public static final String HELLO_STRING = "Hello!";
+    static final String HELLO_STRING = "Hello!";
 
     private static final String USER_REPRESENTATION_TEMPLATE = "<p>%s:%s</p>";
 
@@ -16,21 +16,21 @@ public class CoolService {
     private UserRepository userRepository;
 
 
-    public String sayHello() {
+    String sayHello() {
         return HELLO_STRING;
     }
 
-    public String createUser(String name) {
+    String createUser(String name) {
         return createUserRepresentation(userRepository.save(new UserDocument(name)));
     }
 
-    public String getUsers() {
+    String getUsers() {
         return userRepository.findAll().stream()
                 .map(this::createUserRepresentation)
                 .collect(Collectors.joining("\n"));
     }
 
-    public void deleteAll() {
+    void deleteAll() {
         userRepository.deleteAll();
     }
 
