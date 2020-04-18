@@ -2,10 +2,9 @@ version: '2'
 services:
   mongodb:
     image: mongo:latest
-    container_name: mongo
-    hostname: mongo
+    container_name: mongo-demo
     ports:
-      - 32769:27017
+      - 32768:27017
     networks:
       - appandmongo
 
