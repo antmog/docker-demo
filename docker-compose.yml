@@ -10,7 +10,7 @@ services:
       - appandmongo
 
   application:
-    image: antmog/docker-demo:5
+    image: antmog/docker-demo:6
     container_name: app
     hostname: app
     ports:
