@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static com.example.demo.HelloService.HELLO_STRING;
+import static com.example.demo.CoolService.HELLO_STRING;
 
 @SpringBootTest
 public class TestSomething {
 
     @Autowired
-    HelloService helloService;
+    CoolService helloService;
 
     @Test
     public void testAnything() {
