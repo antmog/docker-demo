@@ -1,0 +1,1 @@
+docker rm -f mongo-demo || docker run --hostname mongo-demo -p 32768:27017 --network appandmongo --name mongo-demo mongo:latest

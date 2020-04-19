@@ -10,7 +10,7 @@ public class CoolService {
 
     static final String HELLO_STRING = "Hello!";
 
-    private static final String USER_REPRESENTATION_TEMPLATE = "<p>%s:%s</p>";
+    private static final String USER_REPRESENTATION_TEMPLATE = "govno<p>%s:%s</p>";
 
     @Autowired
     private UserRepository userRepository;
