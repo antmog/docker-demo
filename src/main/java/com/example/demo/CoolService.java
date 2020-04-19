@@ -17,7 +17,6 @@ public class CoolService {
     @Autowired
     private UserRepository userRepository;
 
-
     String sayHello() {
         return HELLO_STRING;
     }

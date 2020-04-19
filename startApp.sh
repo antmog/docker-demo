@@ -1,1 +1,1 @@
-docker rm -f app && docker pull antmog/docker-demo:9 && docker run -d -p 8087:8082 --network appandmongo --name app antmog/docker-demo:9
+docker rm -f app || docker pull antmog/docker-demo:9 && docker run -d -p 8087:8082 --network appandmongo --name app antmog/docker-demo:9
