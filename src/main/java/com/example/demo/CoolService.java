@@ -12,7 +12,7 @@ public class CoolService {
     static final String HELLO_STRING = "Hello!!!";
 
     private static final String USER_REPRESENTATION_TEMPLATE = "<p>%s:%s</p>";
-    private static final String NO_USERS_CREATED = "No users created";
+    private static final String NO_USERS_CREATED = "No users created.";
 
     @Autowired
     private UserRepository userRepository;
