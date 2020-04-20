@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 @Service
 public class CoolService {
 
-    static final String HELLO_STRING = "Hello!5";
+    static final String HELLO_STRING = "Hello!12";
 
     private static final String USER_REPRESENTATION_TEMPLATE = "<p>%s:%s</p>";
     private static final String NO_USERS_CREATED = "No users created.";
