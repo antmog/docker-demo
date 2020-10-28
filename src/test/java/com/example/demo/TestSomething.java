@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,6 +17,11 @@ public class TestSomething {
     CoolService helloService;
     @Autowired
     UserRepository userRepository;
+
+    @BeforeEach
+    public void init(){
+        userRepository.deleteAll();
+    }
 
     @Test
     public void testAnything() {
