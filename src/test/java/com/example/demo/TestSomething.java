@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,8 +19,8 @@ public class TestSomething {
     @Autowired
     UserRepository userRepository;
 
-    @BeforeEach
-    public void init(){
+    @AfterEach
+    public void init() {
         userRepository.deleteAll();
     }
 
